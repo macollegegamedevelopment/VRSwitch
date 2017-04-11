@@ -9,7 +9,7 @@ public class DisableOnVREnabled : MonoBehaviour
 
 	void Awake()
 	{
-		if (VRSettings.enabled)
+		if (VRDevice.isPresent)
 		{
 			foreach (var comp in components) 
 			{
